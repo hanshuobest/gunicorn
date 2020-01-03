@@ -1,0 +1,918 @@
+[2020-01-03 19:47:14 +0800] [77918] [DEBUG] Current configuration:
+  config: config.py
+  bind: ['0.0.0.0:7001']
+  backlog: 2048
+  workers: 4
+  worker_class: gevent
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /Users/han/PycharmProjects/gunicorn
+  daemon: True
+  raw_env: []
+  pidfile: log/gunicorn.pid
+  worker_tmp_dir: None
+  user: 501
+  group: 20
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: log/access.log
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: log/debug.log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: unix:///var/run/syslog
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: run:app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x10b392680>
+  on_reload: <function OnReload.on_reload at 0x10b3927a0>
+  when_ready: <function WhenReady.when_ready at 0x10b3928c0>
+  pre_fork: <function Prefork.pre_fork at 0x10b3929e0>
+  post_fork: <function Postfork.post_fork at 0x10b392b00>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x10b392c20>
+  worker_int: <function WorkerInt.worker_int at 0x10b392d40>
+  worker_abort: <function WorkerAbort.worker_abort at 0x10b392e60>
+  pre_exec: <function PreExec.pre_exec at 0x10b392f80>
+  pre_request: <function PreRequest.pre_request at 0x10b3c90e0>
+  post_request: <function PostRequest.post_request at 0x10b3c9170>
+  child_exit: <function ChildExit.child_exit at 0x10b3c9290>
+  worker_exit: <function WorkerExit.worker_exit at 0x10b3c93b0>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x10b3c94d0>
+  on_exit: <function OnExit.on_exit at 0x10b3c95f0>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2020-01-03 19:47:14 +0800] [77918] [INFO] Starting gunicorn 20.0.4
+[2020-01-03 19:47:14 +0800] [77918] [DEBUG] Arbiter booted
+[2020-01-03 19:47:14 +0800] [77918] [INFO] Listening at: http://0.0.0.0:7001 (77918)
+[2020-01-03 19:47:14 +0800] [77918] [INFO] Using worker: gevent
+[2020-01-03 19:47:14 +0800] [77924] [INFO] Booting worker with pid: 77924
+[2020-01-03 19:47:14 +0800] [77925] [INFO] Booting worker with pid: 77925
+[2020-01-03 19:47:14 +0800] [77926] [INFO] Booting worker with pid: 77926
+[2020-01-03 19:47:14 +0800] [77927] [INFO] Booting worker with pid: 77927
+[2020-01-03 19:47:14 +0800] [77918] [DEBUG] 4 workers
+[2020-01-03 19:52:52 +0800] [77918] [INFO] Handling signal: term
+[2020-01-03 19:52:52 +0800] [77925] [INFO] Worker exiting (pid: 77925)
+[2020-01-03 19:52:52 +0800] [77924] [INFO] Worker exiting (pid: 77924)
+[2020-01-03 19:52:52 +0800] [77926] [INFO] Worker exiting (pid: 77926)
+[2020-01-03 19:52:52 +0800] [77927] [INFO] Worker exiting (pid: 77927)
+[2020-01-03 19:52:53 +0800] [77918] [INFO] Shutting down: Master
+[2020-01-03 19:53:15 +0800] [79260] [DEBUG] Current configuration:
+  config: config.py
+  bind: ['0.0.0.0:8888']
+  backlog: 2048
+  workers: 4
+  worker_class: gevent
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /Users/han/PycharmProjects/gunicorn
+  daemon: True
+  raw_env: []
+  pidfile: log/gunicorn.pid
+  worker_tmp_dir: None
+  user: 501
+  group: 20
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: log/access.log
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: log/debug.log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: unix:///var/run/syslog
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: run:app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x10aa2d680>
+  on_reload: <function OnReload.on_reload at 0x10aa2d7a0>
+  when_ready: <function WhenReady.when_ready at 0x10aa2d8c0>
+  pre_fork: <function Prefork.pre_fork at 0x10aa2d9e0>
+  post_fork: <function Postfork.post_fork at 0x10aa2db00>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x10aa2dc20>
+  worker_int: <function WorkerInt.worker_int at 0x10aa2dd40>
+  worker_abort: <function WorkerAbort.worker_abort at 0x10aa2de60>
+  pre_exec: <function PreExec.pre_exec at 0x10aa2df80>
+  pre_request: <function PreRequest.pre_request at 0x10aa640e0>
+  post_request: <function PostRequest.post_request at 0x10aa64170>
+  child_exit: <function ChildExit.child_exit at 0x10aa64290>
+  worker_exit: <function WorkerExit.worker_exit at 0x10aa643b0>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x10aa644d0>
+  on_exit: <function OnExit.on_exit at 0x10aa645f0>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2020-01-03 19:53:15 +0800] [79260] [INFO] Starting gunicorn 20.0.4
+[2020-01-03 19:53:15 +0800] [79260] [DEBUG] Arbiter booted
+[2020-01-03 19:53:15 +0800] [79260] [INFO] Listening at: http://0.0.0.0:8888 (79260)
+[2020-01-03 19:53:15 +0800] [79260] [INFO] Using worker: gevent
+[2020-01-03 19:53:15 +0800] [79266] [INFO] Booting worker with pid: 79266
+[2020-01-03 19:53:15 +0800] [79267] [INFO] Booting worker with pid: 79267
+[2020-01-03 19:53:15 +0800] [79268] [INFO] Booting worker with pid: 79268
+[2020-01-03 19:53:15 +0800] [79269] [INFO] Booting worker with pid: 79269
+[2020-01-03 19:53:15 +0800] [79260] [DEBUG] 4 workers
+[2020-01-03 19:53:28 +0800] [79260] [INFO] Handling signal: term
+[2020-01-03 19:53:29 +0800] [79266] [INFO] Worker exiting (pid: 79266)
+[2020-01-03 19:53:29 +0800] [79267] [INFO] Worker exiting (pid: 79267)
+[2020-01-03 19:53:29 +0800] [79268] [INFO] Worker exiting (pid: 79268)
+[2020-01-03 19:53:29 +0800] [79269] [INFO] Worker exiting (pid: 79269)
+[2020-01-03 19:53:29 +0800] [79260] [INFO] Shutting down: Master
+[2020-01-03 19:53:41 +0800] [79391] [DEBUG] Current configuration:
+  config: config.py
+  bind: ['0.0.0.0:8888']
+  backlog: 2048
+  workers: 4
+  worker_class: gevent
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /Users/han/PycharmProjects/gunicorn
+  daemon: True
+  raw_env: []
+  pidfile: log/gunicorn.pid
+  worker_tmp_dir: None
+  user: 501
+  group: 20
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: log/access.log
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: log/debug.log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: unix:///var/run/syslog
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: run:app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x106600680>
+  on_reload: <function OnReload.on_reload at 0x1066007a0>
+  when_ready: <function WhenReady.when_ready at 0x1066008c0>
+  pre_fork: <function Prefork.pre_fork at 0x1066009e0>
+  post_fork: <function Postfork.post_fork at 0x106600b00>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x106600c20>
+  worker_int: <function WorkerInt.worker_int at 0x106600d40>
+  worker_abort: <function WorkerAbort.worker_abort at 0x106600e60>
+  pre_exec: <function PreExec.pre_exec at 0x106600f80>
+  pre_request: <function PreRequest.pre_request at 0x1066370e0>
+  post_request: <function PostRequest.post_request at 0x106637170>
+  child_exit: <function ChildExit.child_exit at 0x106637290>
+  worker_exit: <function WorkerExit.worker_exit at 0x1066373b0>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x1066374d0>
+  on_exit: <function OnExit.on_exit at 0x1066375f0>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2020-01-03 19:53:41 +0800] [79391] [INFO] Starting gunicorn 20.0.4
+[2020-01-03 19:53:41 +0800] [79391] [DEBUG] Arbiter booted
+[2020-01-03 19:53:41 +0800] [79391] [INFO] Listening at: http://0.0.0.0:8888 (79391)
+[2020-01-03 19:53:41 +0800] [79391] [INFO] Using worker: gevent
+[2020-01-03 19:53:41 +0800] [79397] [INFO] Booting worker with pid: 79397
+[2020-01-03 19:53:41 +0800] [79400] [INFO] Booting worker with pid: 79400
+[2020-01-03 19:53:41 +0800] [79401] [INFO] Booting worker with pid: 79401
+[2020-01-03 19:53:41 +0800] [79402] [INFO] Booting worker with pid: 79402
+[2020-01-03 19:53:41 +0800] [79391] [DEBUG] 4 workers
+[2020-01-03 19:54:12 +0800] [79391] [INFO] Handling signal: term
+[2020-01-03 19:54:13 +0800] [79397] [INFO] Worker exiting (pid: 79397)
+[2020-01-03 19:54:13 +0800] [79400] [INFO] Worker exiting (pid: 79400)
+[2020-01-03 19:54:13 +0800] [79402] [INFO] Worker exiting (pid: 79402)
+[2020-01-03 19:54:13 +0800] [79401] [INFO] Worker exiting (pid: 79401)
+[2020-01-03 19:54:13 +0800] [79391] [INFO] Shutting down: Master
+[2020-01-03 19:58:41 +0800] [82359] [DEBUG] Current configuration:
+  config: config.py
+  bind: ['0.0.0.0:8888']
+  backlog: 2048
+  workers: 4
+  worker_class: gevent
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /Users/han/PycharmProjects/gunicorn
+  daemon: True
+  raw_env: []
+  pidfile: log/gunicorn.pid
+  worker_tmp_dir: None
+  user: 501
+  group: 20
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: log/access.log
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: log/debug.log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: unix:///var/run/syslog
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: run:app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x103acc680>
+  on_reload: <function OnReload.on_reload at 0x103acc7a0>
+  when_ready: <function WhenReady.when_ready at 0x103acc8c0>
+  pre_fork: <function Prefork.pre_fork at 0x103acc9e0>
+  post_fork: <function Postfork.post_fork at 0x103accb00>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x103accc20>
+  worker_int: <function WorkerInt.worker_int at 0x103accd40>
+  worker_abort: <function WorkerAbort.worker_abort at 0x103acce60>
+  pre_exec: <function PreExec.pre_exec at 0x103accf80>
+  pre_request: <function PreRequest.pre_request at 0x103b020e0>
+  post_request: <function PostRequest.post_request at 0x103b02170>
+  child_exit: <function ChildExit.child_exit at 0x103b02290>
+  worker_exit: <function WorkerExit.worker_exit at 0x103b023b0>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x103b024d0>
+  on_exit: <function OnExit.on_exit at 0x103b025f0>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2020-01-03 19:58:41 +0800] [82359] [INFO] Starting gunicorn 20.0.4
+[2020-01-03 19:58:41 +0800] [82359] [DEBUG] Arbiter booted
+[2020-01-03 19:58:41 +0800] [82359] [INFO] Listening at: http://0.0.0.0:8888 (82359)
+[2020-01-03 19:58:41 +0800] [82359] [INFO] Using worker: gevent
+[2020-01-03 19:58:41 +0800] [82365] [INFO] Booting worker with pid: 82365
+[2020-01-03 19:58:41 +0800] [82366] [INFO] Booting worker with pid: 82366
+[2020-01-03 19:58:41 +0800] [82367] [INFO] Booting worker with pid: 82367
+[2020-01-03 19:58:41 +0800] [82370] [INFO] Booting worker with pid: 82370
+[2020-01-03 19:58:41 +0800] [82359] [DEBUG] 4 workers
+[2020-01-03 19:59:17 +0800] [82370] [DEBUG] POST /
+[2020-01-03 19:59:20 +0800] [82370] [DEBUG] POST /
+[2020-01-03 19:59:39 +0800] [82366] [DEBUG] POST /
+[2020-01-03 20:00:00 +0800] [82359] [INFO] Handling signal: term
+[2020-01-03 20:00:00 +0800] [82367] [INFO] Worker exiting (pid: 82367)
+[2020-01-03 20:00:00 +0800] [82370] [INFO] Worker exiting (pid: 82370)
+[2020-01-03 20:00:01 +0800] [82365] [INFO] Worker exiting (pid: 82365)
+[2020-01-03 20:00:01 +0800] [82366] [INFO] Worker exiting (pid: 82366)
+[2020-01-03 20:00:01 +0800] [82359] [INFO] Shutting down: Master
+[2020-01-03 20:00:14 +0800] [82801] [DEBUG] Current configuration:
+  config: config.py
+  bind: ['0.0.0.0:8888']
+  backlog: 2048
+  workers: 4
+  worker_class: gevent
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /Users/han/PycharmProjects/gunicorn
+  daemon: True
+  raw_env: []
+  pidfile: log/gunicorn.pid
+  worker_tmp_dir: None
+  user: 501
+  group: 20
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: log/access.log
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: log/debug.log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: unix:///var/run/syslog
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: run:app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x10388f680>
+  on_reload: <function OnReload.on_reload at 0x10388f7a0>
+  when_ready: <function WhenReady.when_ready at 0x10388f8c0>
+  pre_fork: <function Prefork.pre_fork at 0x10388f9e0>
+  post_fork: <function Postfork.post_fork at 0x10388fb00>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x10388fc20>
+  worker_int: <function WorkerInt.worker_int at 0x10388fd40>
+  worker_abort: <function WorkerAbort.worker_abort at 0x10388fe60>
+  pre_exec: <function PreExec.pre_exec at 0x10388ff80>
+  pre_request: <function PreRequest.pre_request at 0x1038c60e0>
+  post_request: <function PostRequest.post_request at 0x1038c6170>
+  child_exit: <function ChildExit.child_exit at 0x1038c6290>
+  worker_exit: <function WorkerExit.worker_exit at 0x1038c63b0>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x1038c64d0>
+  on_exit: <function OnExit.on_exit at 0x1038c65f0>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2020-01-03 20:00:14 +0800] [82801] [INFO] Starting gunicorn 20.0.4
+[2020-01-03 20:00:14 +0800] [82801] [DEBUG] Arbiter booted
+[2020-01-03 20:00:14 +0800] [82801] [INFO] Listening at: http://0.0.0.0:8888 (82801)
+[2020-01-03 20:00:14 +0800] [82801] [INFO] Using worker: gevent
+[2020-01-03 20:00:14 +0800] [82807] [INFO] Booting worker with pid: 82807
+[2020-01-03 20:00:14 +0800] [82808] [INFO] Booting worker with pid: 82808
+[2020-01-03 20:00:15 +0800] [82809] [INFO] Booting worker with pid: 82809
+[2020-01-03 20:00:15 +0800] [82810] [INFO] Booting worker with pid: 82810
+[2020-01-03 20:00:15 +0800] [82801] [DEBUG] 4 workers
+[2020-01-03 20:00:22 +0800] [82809] [DEBUG] POST /hello
+[2020-01-03 20:00:23 +0800] [82809] [DEBUG] POST /hello
+[2020-01-03 20:00:47 +0800] [82809] [DEBUG] POST /hello
+[2020-01-03 20:00:48 +0800] [82809] [DEBUG] POST /hello
+[2020-01-03 20:00:49 +0800] [82809] [DEBUG] POST /hello
+[2020-01-03 20:01:15 +0800] [82809] [DEBUG] POST /hello
+[2020-01-03 20:01:16 +0800] [82809] [DEBUG] POST /hello
+[2020-01-03 20:01:17 +0800] [82809] [DEBUG] POST /hello
+[2020-01-03 20:01:21 +0800] [82807] [DEBUG] POST /hello
+[2020-01-03 20:02:20 +0800] [82801] [INFO] Handling signal: term
+[2020-01-03 20:02:21 +0800] [82807] [INFO] Worker exiting (pid: 82807)
+[2020-01-03 20:02:21 +0800] [82808] [INFO] Worker exiting (pid: 82808)
+[2020-01-03 20:02:21 +0800] [82809] [INFO] Worker exiting (pid: 82809)
+[2020-01-03 20:02:21 +0800] [82810] [INFO] Worker exiting (pid: 82810)
+[2020-01-03 20:02:21 +0800] [82801] [INFO] Shutting down: Master
+[2020-01-03 20:02:26 +0800] [83297] [DEBUG] Current configuration:
+  config: config.py
+  bind: ['10.1.25.84:8888']
+  backlog: 2048
+  workers: 4
+  worker_class: gevent
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /Users/han/PycharmProjects/gunicorn
+  daemon: True
+  raw_env: []
+  pidfile: log/gunicorn.pid
+  worker_tmp_dir: None
+  user: 501
+  group: 20
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: log/access.log
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: log/debug.log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: unix:///var/run/syslog
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: run:app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x1104b1680>
+  on_reload: <function OnReload.on_reload at 0x1104b17a0>
+  when_ready: <function WhenReady.when_ready at 0x1104b18c0>
+  pre_fork: <function Prefork.pre_fork at 0x1104b19e0>
+  post_fork: <function Postfork.post_fork at 0x1104b1b00>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x1104b1c20>
+  worker_int: <function WorkerInt.worker_int at 0x1104b1d40>
+  worker_abort: <function WorkerAbort.worker_abort at 0x1104b1e60>
+  pre_exec: <function PreExec.pre_exec at 0x1104b1f80>
+  pre_request: <function PreRequest.pre_request at 0x1104e80e0>
+  post_request: <function PostRequest.post_request at 0x1104e8170>
+  child_exit: <function ChildExit.child_exit at 0x1104e8290>
+  worker_exit: <function WorkerExit.worker_exit at 0x1104e83b0>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x1104e84d0>
+  on_exit: <function OnExit.on_exit at 0x1104e85f0>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2020-01-03 20:02:26 +0800] [83297] [INFO] Starting gunicorn 20.0.4
+[2020-01-03 20:02:26 +0800] [83297] [DEBUG] Arbiter booted
+[2020-01-03 20:02:26 +0800] [83297] [INFO] Listening at: http://10.1.25.84:8888 (83297)
+[2020-01-03 20:02:26 +0800] [83297] [INFO] Using worker: gevent
+[2020-01-03 20:02:26 +0800] [83303] [INFO] Booting worker with pid: 83303
+[2020-01-03 20:02:26 +0800] [83304] [INFO] Booting worker with pid: 83304
+[2020-01-03 20:02:26 +0800] [83305] [INFO] Booting worker with pid: 83305
+[2020-01-03 20:02:26 +0800] [83306] [INFO] Booting worker with pid: 83306
+[2020-01-03 20:02:26 +0800] [83297] [DEBUG] 4 workers
+[2020-01-03 20:02:29 +0800] [83305] [DEBUG] POST /hello
+[2020-01-03 20:02:30 +0800] [83305] [DEBUG] POST /hello
+[2020-01-03 20:02:30 +0800] [83305] [DEBUG] POST /hello
+[2020-01-03 20:02:31 +0800] [83305] [DEBUG] POST /hello
+[2020-01-03 20:02:32 +0800] [83305] [DEBUG] POST /hello
+[2020-01-03 20:02:32 +0800] [83305] [DEBUG] POST /hello
+[2020-01-03 20:03:00 +0800] [83434] [DEBUG] Current configuration:
+  config: config.py
+  bind: ['10.1.25.84:8888']
+  backlog: 2048
+  workers: 4
+  worker_class: gevent
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /Users/han/PycharmProjects/gunicorn
+  daemon: False
+  raw_env: []
+  pidfile: log/gunicorn.pid
+  worker_tmp_dir: None
+  user: 501
+  group: 20
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: log/access.log
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: log/debug.log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: unix:///var/run/syslog
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: run:app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x102243680>
+  on_reload: <function OnReload.on_reload at 0x1022437a0>
+  when_ready: <function WhenReady.when_ready at 0x1022438c0>
+  pre_fork: <function Prefork.pre_fork at 0x1022439e0>
+  post_fork: <function Postfork.post_fork at 0x102243b00>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x102243c20>
+  worker_int: <function WorkerInt.worker_int at 0x102243d40>
+  worker_abort: <function WorkerAbort.worker_abort at 0x102243e60>
+  pre_exec: <function PreExec.pre_exec at 0x102243f80>
+  pre_request: <function PreRequest.pre_request at 0x1022790e0>
+  post_request: <function PostRequest.post_request at 0x102279170>
+  child_exit: <function ChildExit.child_exit at 0x102279290>
+  worker_exit: <function WorkerExit.worker_exit at 0x1022793b0>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x1022794d0>
+  on_exit: <function OnExit.on_exit at 0x1022795f0>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2020-01-03 20:03:00 +0800] [83434] [INFO] Starting gunicorn 20.0.4
+[2020-01-03 20:03:00 +0800] [83434] [DEBUG] Arbiter booted
+[2020-01-03 20:03:00 +0800] [83434] [INFO] Listening at: http://10.1.25.84:8888 (83434)
+[2020-01-03 20:03:00 +0800] [83434] [INFO] Using worker: gevent
+[2020-01-03 20:03:00 +0800] [83439] [INFO] Booting worker with pid: 83439
+[2020-01-03 20:03:00 +0800] [83440] [INFO] Booting worker with pid: 83440
+[2020-01-03 20:03:00 +0800] [83441] [INFO] Booting worker with pid: 83441
+[2020-01-03 20:03:00 +0800] [83442] [INFO] Booting worker with pid: 83442
+[2020-01-03 20:03:00 +0800] [83434] [DEBUG] 4 workers
+[2020-01-03 20:03:21 +0800] [83442] [DEBUG] POST /hello
+[2020-01-03 20:03:22 +0800] [83442] [DEBUG] POST /hello
+[2020-01-03 20:03:22 +0800] [83442] [DEBUG] POST /hello
+[2020-01-03 20:03:32 +0800] [83434] [INFO] Handling signal: int
+[2020-01-03 20:03:32 +0800] [83441] [INFO] Worker exiting (pid: 83441)
+[2020-01-03 20:03:32 +0800] [83440] [INFO] Worker exiting (pid: 83440)
+[2020-01-03 20:03:32 +0800] [83439] [INFO] Worker exiting (pid: 83439)
+[2020-01-03 20:03:32 +0800] [83442] [INFO] Worker exiting (pid: 83442)
+[2020-01-03 20:03:32 +0800] [83434] [INFO] Shutting down: Master
+[2020-01-03 20:09:17 +0800] [84929] [DEBUG] Current configuration:
+  config: config.py
+  bind: ['10.1.25.84:8888']
+  backlog: 2048
+  workers: 4
+  worker_class: gevent
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /Users/han/PycharmProjects/gunicorn
+  daemon: False
+  raw_env: []
+  pidfile: log/gunicorn.pid
+  worker_tmp_dir: None
+  user: 501
+  group: 20
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: log/access.log
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: log/debug.log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: unix:///var/run/syslog
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: run:app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x1042fc680>
+  on_reload: <function OnReload.on_reload at 0x1042fc7a0>
+  when_ready: <function WhenReady.when_ready at 0x1042fc8c0>
+  pre_fork: <function Prefork.pre_fork at 0x1042fc9e0>
+  post_fork: <function Postfork.post_fork at 0x1042fcb00>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x1042fcc20>
+  worker_int: <function WorkerInt.worker_int at 0x1042fcd40>
+  worker_abort: <function WorkerAbort.worker_abort at 0x1042fce60>
+  pre_exec: <function PreExec.pre_exec at 0x1042fcf80>
+  pre_request: <function PreRequest.pre_request at 0x1043330e0>
+  post_request: <function PostRequest.post_request at 0x104333170>
+  child_exit: <function ChildExit.child_exit at 0x104333290>
+  worker_exit: <function WorkerExit.worker_exit at 0x1043333b0>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x1043334d0>
+  on_exit: <function OnExit.on_exit at 0x1043335f0>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2020-01-03 20:09:17 +0800] [84929] [INFO] Starting gunicorn 20.0.4
+[2020-01-03 20:09:17 +0800] [84929] [DEBUG] Arbiter booted
+[2020-01-03 20:09:17 +0800] [84929] [INFO] Listening at: http://10.1.25.84:8888 (84929)
+[2020-01-03 20:09:17 +0800] [84929] [INFO] Using worker: gevent
+[2020-01-03 20:09:17 +0800] [84932] [INFO] Booting worker with pid: 84932
+[2020-01-03 20:09:17 +0800] [84933] [INFO] Booting worker with pid: 84933
+[2020-01-03 20:09:17 +0800] [84934] [INFO] Booting worker with pid: 84934
+[2020-01-03 20:09:17 +0800] [84935] [INFO] Booting worker with pid: 84935
+[2020-01-03 20:09:17 +0800] [84929] [DEBUG] 4 workers
+[2020-01-03 20:09:27 +0800] [84935] [DEBUG] POST /hello
+[2020-01-03 20:09:28 +0800] [84935] [DEBUG] POST /hello
+[2020-01-03 20:09:31 +0800] [84929] [INFO] Handling signal: int
+[2020-01-03 20:09:31 +0800] [84932] [INFO] Worker exiting (pid: 84932)
+[2020-01-03 20:09:31 +0800] [84933] [INFO] Worker exiting (pid: 84933)
+[2020-01-03 20:09:31 +0800] [84934] [INFO] Worker exiting (pid: 84934)
+[2020-01-03 20:09:31 +0800] [84935] [INFO] Worker exiting (pid: 84935)
+[2020-01-03 20:09:31 +0800] [84929] [INFO] Shutting down: Master
+[2020-01-03 20:10:03 +0800] [85167] [DEBUG] Current configuration:
+  config: config.py
+  bind: ['10.1.25.84:8888']
+  backlog: 2048
+  workers: 4
+  worker_class: gevent
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /Users/han/PycharmProjects/gunicorn
+  daemon: True
+  raw_env: []
+  pidfile: log/gunicorn.pid
+  worker_tmp_dir: None
+  user: 501
+  group: 20
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: log/access.log
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: log/debug.log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: unix:///var/run/syslog
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: run:app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x108130680>
+  on_reload: <function OnReload.on_reload at 0x1081307a0>
+  when_ready: <function WhenReady.when_ready at 0x1081308c0>
+  pre_fork: <function Prefork.pre_fork at 0x1081309e0>
+  post_fork: <function Postfork.post_fork at 0x108130b00>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x108130c20>
+  worker_int: <function WorkerInt.worker_int at 0x108130d40>
+  worker_abort: <function WorkerAbort.worker_abort at 0x108130e60>
+  pre_exec: <function PreExec.pre_exec at 0x108130f80>
+  pre_request: <function PreRequest.pre_request at 0x10814b0e0>
+  post_request: <function PostRequest.post_request at 0x10814b170>
+  child_exit: <function ChildExit.child_exit at 0x10814b290>
+  worker_exit: <function WorkerExit.worker_exit at 0x10814b3b0>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x10814b4d0>
+  on_exit: <function OnExit.on_exit at 0x10814b5f0>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2020-01-03 20:10:03 +0800] [85167] [INFO] Starting gunicorn 20.0.4
+[2020-01-03 20:10:03 +0800] [85167] [DEBUG] Arbiter booted
+[2020-01-03 20:10:03 +0800] [85167] [INFO] Listening at: http://10.1.25.84:8888 (85167)
+[2020-01-03 20:10:03 +0800] [85167] [INFO] Using worker: gevent
+[2020-01-03 20:10:03 +0800] [85173] [INFO] Booting worker with pid: 85173
+[2020-01-03 20:10:03 +0800] [85174] [INFO] Booting worker with pid: 85174
+[2020-01-03 20:10:03 +0800] [85175] [INFO] Booting worker with pid: 85175
+[2020-01-03 20:10:03 +0800] [85176] [INFO] Booting worker with pid: 85176
+[2020-01-03 20:10:04 +0800] [85167] [DEBUG] 4 workers
+[2020-01-03 20:10:15 +0800] [85175] [DEBUG] POST /hello
+[2020-01-03 20:10:16 +0800] [85175] [DEBUG] POST /hello
+[2020-01-03 20:10:16 +0800] [85175] [DEBUG] POST /hello
+[2020-01-03 20:10:27 +0800] [85176] [DEBUG] POST /hello
+[2020-01-03 20:10:27 +0800] [85176] [DEBUG] POST /hello
+[2020-01-03 20:10:31 +0800] [85176] [DEBUG] POST /hello
+[2020-01-03 20:10:32 +0800] [85176] [DEBUG] POST /hello
+[2020-01-03 20:10:44 +0800] [85176] [DEBUG] POST /hello
+[2020-01-03 20:10:44 +0800] [85176] [DEBUG] POST /hello
+[2020-01-03 20:10:45 +0800] [85176] [DEBUG] POST /hello
+[2020-01-03 20:12:49 +0800] [85167] [INFO] Handling signal: term
+[2020-01-03 20:12:50 +0800] [85175] [INFO] Worker exiting (pid: 85175)
+[2020-01-03 20:12:50 +0800] [85173] [INFO] Worker exiting (pid: 85173)
+[2020-01-03 20:12:50 +0800] [85174] [INFO] Worker exiting (pid: 85174)
+[2020-01-03 20:12:50 +0800] [85176] [INFO] Worker exiting (pid: 85176)
+[2020-01-03 20:12:50 +0800] [85167] [INFO] Shutting down: Master
